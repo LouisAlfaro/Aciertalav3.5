@@ -41,7 +41,7 @@ namespace AciertalaV3
             webView21.CoreWebView2.WebResourceResponseReceived += async (sender, args) =>
             {
                 var req = args.Request;
-                var uri = req.Uri;
+                var uri = req.Uri; 
 
                 // 1) Capturar checkout2
                 if (req.Method == "POST" && uri.Contains("/api/v1/ticket/checkout2"))
